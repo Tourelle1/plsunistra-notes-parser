@@ -29,7 +29,7 @@ Pour plus de détails, consulter le fichier LICENSE ou :
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-COMMENT UTILISER : 
+Comment l'utiliser : 
 (0.) Télecharger pypdf :
 Sur linux : 
 - Sur VS Code (Recomendé) : Dans le terminal : "sudo apt install pip3" puis dans la console VS Code : "pip3 install pypdf"
