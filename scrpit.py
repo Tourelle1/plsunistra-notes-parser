@@ -212,18 +212,6 @@ def normalize_number(n,to_len):
         return s[:to_len]
     else:
         return s+" "*(to_len-len(s))
-    
-def note_max_ue(nom_mat):
-    num_max = None
-    for num in etudient.keys():
-        if num_max==None:
-            if nom_mat in etudient[num].keys():
-                num_max = num
-        else:
-            if nom_mat in etudient[num].keys():
-                if etudient[num][nom_mat][0]>etudient[num_max][nom_mat][0]:
-                    num_max = num
-    return num_max
         
 def update_etu(e):
     """ Fonction qui calcule la moyenne pour chaque bloc,ue """
@@ -330,28 +318,6 @@ def print_etu(e):
     print("="*80)
     print_color("MOYENNE GENERAL : "+str(round(etudient[e]["_MOY_GE_"][0],3))+"/20",BLUE)
     print(RESET)
-
-        
-        
-def print_etu_old(e):
-    print("NUMERO ETUDIENT :N°=",e,get_cmi_status(e))
-    print(normalize_name("NOM UE",40),"|",end="")
-    colomn_count = 4
-    for i in range(colomn_count):
-        note = "CC"+str(i)
-        if i==0:
-            note = "MOYENNE"
-        print(normalize_name(note,10),"|",end="")
-    print("")
-    print("-"*100)
-    for u in etudient[e].keys():
-        print(normalize_name(u,40),"|",end="")
-        for note in etudient[e][u]:
-            print(normalize_number(note,10),"|",end="")
-        for i in range(colomn_count-len(etudient[e][u])):
-            print("###########|",end="")
-        print("")     
-
 
 def add_bloc(nom,id,coef):
     dict_bloc[nom] = (int(id),float(coef))
