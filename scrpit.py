@@ -22,21 +22,21 @@ fichiers et aux libertés.
 2. Ne pas utiliser ce logiciel pour traiter des données personnelles SANS LE CONSENTEMENT
 EXPLICITE des personnes concernées.
 
-## Licence :
+ Licence :
 Ce logiciel est distribué sous la licence Creative Commons Attribution - Pas d'Utilisation Commerciale
 - Partage dans les mêmes conditions 4.0 International (CC BY-NC-SA 4.0).
 Pour plus de détails, consulter le fichier LICENSE ou : 
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-## Comment l'utiliser : 
+ Comment l'utiliser : 
 0. Télécharger pypdf (Voir plus bas)
 1. Aller sur Seafile et télécharger en entier le dossier "Résultat" dans L1-MI
 2. Décompresser le fichier, et y ajouter dedans le fichier data.txt qui contient les informations concernant les coefs, etc...
 3. Changer le chemin d'accès au dossier des notes. (À noter que sur Windows les / simple fonctionnement également sur VS Code)
 4. Exectuer et entrer votre numéro étudiant
 
-## Installer PyPDF :
+ Installer PyPDF :
 (1.) Sur Windows : Tout simplement télécharger via le CMD avec "pip install pypdf"
 
 (2.) Sur linux :
