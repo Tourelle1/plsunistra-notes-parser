@@ -22,26 +22,42 @@ fichiers et aux libertés.
 2. Ne pas utiliser ce logiciel pour traiter des données personnelles SANS LE CONSENTEMENT
 EXPLICITE des personnes concernées.
 
-Licence :
+## Licence :
 Ce logiciel est distribué sous la licence Creative Commons Attribution - Pas d'Utilisation Commerciale
 - Partage dans les mêmes conditions 4.0 International (CC BY-NC-SA 4.0).
 Pour plus de détails, consulter le fichier LICENSE ou : 
 https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 
-Comment l'utiliser : 
-(0.) Télecharger pypdf :
-Sur linux : 
-- Sur VS Code (Recomendé) : Dans le terminal : "sudo apt install pip3" puis dans la console VS Code : "pip3 install pypdf"
-- Sur l'environement : "sudo apt install python3-pypdf" dans le terminal
-Sur Windows : Tout simplement télécharchger via le CMD avec "pip install pypdf"
+## Comment l'utiliser : 
+0. Télécharger pypdf (Voir plus bas)
 1. Aller sur Seafile et télécharger en entier le dossier "Résultat" dans L1-MI
-2. Décompresser le fichier, et y ajouter dedans le ficher data.txt qui contient les information concernant les coefs ect...
-3. Changer le chemain d'accès au dossier des notes (A noter que sur windows les / simple fonctionent également sur VS Code)
+2. Décompresser le fichier, et y ajouter dedans le fichier data.txt qui contient les informations concernant les coefs, etc...
+3. Changer le chemin d'accès au dossier des notes. (À noter que sur Windows les / simple fonctionnement également sur VS Code)
 4. Exectuer et entrer votre numéro étudiant
 
-"""
+## Installer PyPDF :
+(1.) Sur Windows : Tout simplement télécharger via le CMD avec "pip install pypdf"
 
+(2.) Sur linux :
+
+ A. Sur une machine de l'université (Ou toutes machines sans permission root)
+  - Faire les commandes suivantes dans le terminal :
+    curl https://bootstrap.pypa.io/pip/3.8/get-pip.py -o get-pip.py
+    python3 get-pip.py --user
+
+    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc
+
+    pip install pypdf
+  
+
+ B. Sur une machine avec les permission root
+ - Sur l'environnement : "sudo apt install python3-pypdf" dans le terminal
+ - Sur VS Code: Dans le terminal : "sudo apt install pip3" puis dans la console VS Code : "pip3 install pypdf"
+ - À noter que la méthode **A.** marche également
+
+"""
 
 
 dossier_note = r"path..." 
