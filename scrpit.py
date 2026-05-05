@@ -41,17 +41,8 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 
 (2.) Sur linux :
 
- A. Sur une machine de l'université (Ou toutes machines sans permission root)
-  - Faire les commandes suivantes dans le terminal :
-    curl https://bootstrap.pypa.io/pip/3.8/get-pip.py -o get-pip.py
-    python3 get-pip.py --user
-
-    echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-    source ~/.bashrc
-
-    pip install pypdf
-  
-
+ A. Sur une machine de l'université 
+   - Faire la commande suivantes dans le terminal : pip install --break-system-packages pypdf
  B. Sur une machine avec les permission root
  - Sur l'environnement : "sudo apt install python3-pypdf" dans le terminal
  - Sur VS Code: Dans le terminal : "sudo apt install pip3" puis dans la console VS Code : "pip3 install pypdf"
