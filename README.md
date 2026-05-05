@@ -43,7 +43,7 @@ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr
 (2.) Sur linux :
 
  **A.** Sur une machine de l'université
-  - Faire les commandes suivantes dans le terminal : pip install --break-system-packages pypdf
+  - Faire la commande suivantes dans le terminal : pip install --break-system-packages pypdf
 
  **B.** Sur une machine avec les permission root
  - Pour l'exectuer sur l'environnement : "sudo apt install python3-pypdf" dans le terminal
